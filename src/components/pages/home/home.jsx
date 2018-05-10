@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cs from 'classnames';
 
-import css from './home.scss';
+import { LinkInputSectionContainer } from './linkInputSection/linkInputSectionContainer';
+// import { LinkTableSectionContainer } from './linkTableSection/linkTableSectionContainer';
 
 export const Home = (props) => {
   const { className } = props;
@@ -13,7 +14,8 @@ export const Home = (props) => {
 
   return (
     <div className={wrapperCS}>
-      <h1 className={css.header}>Home</h1>
+      <LinkInputSectionContainer />
+      {/* <LinkTableSectionContainer /> */}
     </div>
   );
 };

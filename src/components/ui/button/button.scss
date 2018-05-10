@@ -1,16 +1,15 @@
 .button {
   position: relative;
-  width: 100%;
   font-size: $fontSizeM;
-  font-weight: $fontWeightMedium;
-  text-transform: uppercase;
+  font-weight: $fontWeightLight;
   cursor: pointer;
   color: $colorWhite;
   background: $colorPrimary;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
   padding: 0.5rem 1rem;
-  border: $radiusNormal;
+  border: $radiusDefault;
   border: 0;
+  border-radius: $radiusDefault;
 
   &:hover {
     opacity: 0.8;
