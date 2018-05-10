@@ -9,6 +9,7 @@ import { Notifier } from '../../uiContainers/notifier/notifier';
 import { Progress } from '../../uiContainers/progress/progress';
 
 import css from './layout.scss';
+import sharedCss from '../../../styles/shared.scss';
 
 export const Layout = (props) => {
   const {
@@ -18,6 +19,7 @@ export const Layout = (props) => {
 
   const wrapperCS = cs(
     { [className]: className },
+    sharedCss.container,
     css.wrapper,
   );
 

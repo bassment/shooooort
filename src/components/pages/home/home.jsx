@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cs from 'classnames';
 
-import { ExampleContainer } from '../../example/exampleContainer';
-
 import css from './home.scss';
 
 export const Home = (props) => {
@@ -16,7 +14,6 @@ export const Home = (props) => {
   return (
     <div className={wrapperCS}>
       <h1 className={css.header}>Home</h1>
-      <ExampleContainer />
     </div>
   );
 };

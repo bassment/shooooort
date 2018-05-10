@@ -18,8 +18,9 @@ export const Navbar = (props) => {
   return (
     <div className={wrapperCS}>
       <Link to="/">
-        Shooooort
+        <h1 className={css.logo}>Shooooort</h1>
       </Link>
+      <h3 className={css.text}>The link shortener with a long name</h3>
     </div>
   );
 };

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  font-weight: 400;
+}
+
+.text {
+  color: $colorTextSecondary;
+  font-weight: 300;
+}

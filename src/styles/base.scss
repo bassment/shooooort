@@ -15,18 +15,18 @@ body {
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: $fontSizeXL;
-  margin-bottom: 16px;
 }
 
 h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: $fontSizeL;
-  margin-bottom: 8px;
 }
 
 h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: $fontSizeM;
-  margin-bottom: 8px;
 }
 
 b, strong, th {
@@ -68,18 +68,4 @@ select:focus {
 
 th, td {
   vertical-align: middle;
-}
-
-:global {
-  .page {
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    &:after {
-      clear: both;
-      display: table;
-      content: "";
-    }
-  }
 }
