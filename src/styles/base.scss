@@ -1,0 +1,85 @@
+@import "./_fonts.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.618;
+  color: $colorBlackPrimary;
+  font-size: $fontSizeM;
+  background: $colorWhite;
+  text-shadow: rgba(0,0,0,.15) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: $fontSizeXL;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: $fontSizeL;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: $fontSizeM;
+  margin-bottom: 8px;
+}
+
+b, strong, th {
+  font-weight: bold;
+}
+
+a {
+  color: $colorLink;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $colorLink;
+    text-decoration: underline;
+  }
+}
+
+button::-moz-focus-inner {
+  border: none;
+}
+
+input {
+  font-family: "Roboto";
+}
+
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+:global {
+  .page {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    &:after {
+      clear: both;
+      display: table;
+      content: "";
+    }
+  }
+}

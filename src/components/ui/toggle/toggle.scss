@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+}
+
+.label {
+  padding-left: 0.5rem;
+}
+
+:global {
+  .toggle.react-toggle--checked {
+    .react-toggle-track {
+      background-color: $colorSuccessPrimary;
+    }
+
+    .react-toggle-thumb {
+      border-color: $colorSuccessPrimary;
+    }
+
+    &:hover {
+      .react-toggle-track {
+        background-color: shade($colorSuccessPrimary, 20%);
+      }
+
+      .react-toggle-thumb {
+        border-color: shade($colorSuccessPrimary, 20%);
+      }
+    }
+  }
+}

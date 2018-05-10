@@ -1,0 +1,23 @@
+.button {
+  position: relative;
+  width: 100%;
+  font-size: $fontSizeM;
+  font-weight: $fontWeightMedium;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $colorWhite;
+  background: $colorPrimary;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+  padding: 0.5rem 1rem;
+  border: $radiusNormal;
+  border: 0;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 3px 4px 1px rgba(0,0,0,.1)
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wrapperButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+.progress {
+  position: absolute;
+  background: linear-gradient(to right, $colorPrimary, shade($colorPrimary, 20%));
+  border-radius: $radiusLoader;
+  height: 4px;
+}
+
+.progressButton {
+  position: absolute;
+  background: repeating-linear-gradient(
+		-45deg,
+		$colorPrimary,
+		$colorPrimary 10px,
+		shade($colorPrimary,10%) 10px,
+		shade($colorPrimary,10%) 20px,
+		$colorPrimary 20px
+	) top left;
+  height: 100%;
+}
+
+.progressLabel {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
+.loadingButton {
+  background: repeating-linear-gradient(
+      -45deg,
+      $colorBlackAdditional,
+      $colorBlackAdditional 10px,
+      shade($colorBlackAdditional,10%) 10px,
+      shade($colorBlackAdditional,10%) 20px,
+      $colorBlackAdditional 20px
+    ) top left;
+}
+
+.loadingLabel {
+  display: block;
+}

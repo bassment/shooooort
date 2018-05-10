@@ -1,0 +1,53 @@
+.wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all .4s ease-in;
+}
+
+.message {
+  text-align: center;
+  width: 80%;
+  color: $colorWhite;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.show {
+  opacity: 1;
+  z-index: 1;
+}
+
+.closeIcon {
+  position: absolute;
+  cursor: pointer;
+  fill: $colorWhite;
+  right: 16px;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+}
+
+.messageSuccess {
+  background: $colorSuccessPrimary;
+}
+
+.messageWarning {
+  background: $colorWarning;
+}
+
+.messageAlert {
+  background: $colorAlert;
+}
+
+.messageInfo {
+  background: $colorNotify;
+}
