@@ -11,11 +11,15 @@ export const Button = (props) => {
     className,
     children,
     type,
+    noBackground,
     onClick,
   } = props;
 
   const wrapperCS = cs(
-    { [className]: className },
+    {
+      [className]: className,
+      [css.noBackground]: noBackground,
+    },
     css.button,
   );
 
@@ -26,7 +30,7 @@ export const Button = (props) => {
       onClick={onClick}
     >
       {children}
-      <RippleEffect />
+      <RippleEffect color={noBackground ? 'black' : 'white'} />
     </button>
   );
 };
@@ -35,6 +39,7 @@ Button.defaultProps = {
   className: null,
   children: null,
   type: null,
+  noBackground: false,
   onClick: null,
 };
 
@@ -42,5 +47,6 @@ Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.any,
   type: PropTypes.string,
+  noBackground: PropTypes.bool,
   onClick: PropTypes.func,
 };

@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $fontRoboto;
   line-height: 1.618;
   color: $colorTextPrimary;
   font-size: $fontSizeM;
@@ -15,17 +15,17 @@ body {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $fontMontserrat;
   font-size: $fontSizeXL;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $fontMontserrat;
   font-size: $fontSizeL;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $fontMontserrat;
   font-size: $fontSizeM;
 }
 

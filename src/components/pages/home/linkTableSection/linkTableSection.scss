@@ -1,3 +1,85 @@
+.wrapper {
+  margin-top: 4rem;
+}
+
 .header {
-  color: $colorPrimary;
+  display: inline-block;
+  font-family: $fontRoboto;
+  font-weight: $fontWeightLight;
+}
+
+.button {
+  margin-left: 1rem;
+}
+
+.linkTable {
+  margin-top: 2rem;
+  thead {
+    tr {
+      th {
+        width: 10%;
+        padding-right: 0.5rem;
+        text-align: start;
+        color: $colorTextSecondary;
+        font-size: $fontSizeS;
+        font-weight: $fontWeightRegular;
+        text-transform: uppercase;
+      }
+      th:first-child {
+        width: 70%;
+      }
+      th:last-child {
+        width: 20%;
+      }
+    }
+  }
+
+  tbody tr {
+    td {
+      width: 10%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 0.5rem;
+    }
+    td:first-child {
+      width: 70%;
+
+      &:hover {
+        .copyButton {
+          display: inline-block;
+        }
+      }
+    }
+    td:last-child {
+      width: 20%;
+    }
+  }
+}
+
+.shortLink {
+  display: inline-block;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}
+
+.longLink {
+  display: block;
+  width: 90%;
+  color: $colorTextComplementary;
+  font-weight: $fontWeightLight;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.visitsLabel {
+  font-weight: $fontWeightLight;
+}
+
+.daysLabel {
+  font-weight: $fontWeightLight;
+}
+
+.copyButton {
+  display: none;
 }

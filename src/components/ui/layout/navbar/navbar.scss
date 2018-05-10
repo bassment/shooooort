@@ -5,10 +5,10 @@
 }
 
 .logo {
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
 }
 
 .text {
   color: $colorTextSecondary;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
 }
