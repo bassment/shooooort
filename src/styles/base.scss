@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.618;
-  color: $colorBlackPrimary;
+  color: $colorTextPrimary;
   font-size: $fontSizeM;
   background: $colorWhite;
   text-shadow: rgba(0,0,0,.15) 0 0 1px;
@@ -34,12 +34,12 @@ b, strong, th {
 }
 
 a {
-  color: $colorLink;
+  color: $colorPrimary;
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    color: $colorLink;
+    color: $colorPrimary;
     text-decoration: underline;
   }
 }

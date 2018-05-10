@@ -1,19 +1,16 @@
 // colors
-$colorPrimary: #3b9fe2;
-$colorSecondary: #9675ce;
-$colorLink: #00a1cd;
+$colorPrimary: #eb4a42;
 
-$colorBlackPure: #000;
-$colorBlackPrimary: #333;
-$colorBlackSecondary: #2b2b2b;
+$colorWhite: #ffffff;
 $colorBlackAdditional: #565656;
-$colorWhite: #fff;
-$colorGrey: #f7fafc;
 
-$colorTextPrimary: #4c5667;
-$colorTextSecondary: #8d9ea7;
-$colorTextComplementary: #a6afbb;
-$colorTextAdditional: #54667a;
+$colorTextPrimary: #555555;
+$colorTextSecondary: #aaaaaa;
+$colorTextComplementary: #cccccc;
+$colorTextButtonDisabled: #bfbfbf;
+
+$colorBackgroundInput: #eaeaea;
+$colorBackgroundButtonDisabled: #e0e0e0;
 
 $colorSuccessPrimary: #00c292;
 $colorSuccessSecondary: #01c0c8;
@@ -22,17 +19,14 @@ $colorNotify: #fb9678;
 $colorAlert: #e53935;
 
 // radius
+$radiusDefault: 3px;
 $radiusLoader: 20px;
 
 // font-size
-$fontSizeXXXL: 32px;
-$fontSizeXXL: 28px;
-$fontSizeXL: 24px;
-$fontSizeL: 20px;
+$fontSizeXL: 47px;;
+$fontSizeL: 22px;
 $fontSizeM: 16px;
 $fontSizeS: 14px;
-$fontSizeXS: 13px;
-$fontSizeXXS: 10px;
 
 // font-weight
 $fontWeightBold: 700;
@@ -40,6 +34,7 @@ $fontWeightSemiBold: 600;
 $fontWeightMedium: 500;
 $fontWeightRegular: 400;
 $fontWeightLight: 300;
+$fontWeightThin: 200;
 
 // breakpoints
 $breakpointXL: 1200px;
