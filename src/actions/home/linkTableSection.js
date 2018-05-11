@@ -2,6 +2,8 @@ import { showLoading, hideLoading } from 'react-redux-loading-bar';
 
 import { getLinkStats } from '../../utils/api';
 
+import { formatDate } from '../../helpers/date';
+
 import { applicationShowNotifier } from '../../actions/application/application';
 
 import { SUBSTITUTION_HOST } from '../../config';
@@ -35,6 +37,7 @@ export const linkTableSectionUpdateLinksData = () =>
         collection.push({
           ...link,
           visits: result.redirectCount,
+          lastVisited: result.lastSeenDate ? formatDate(new Date(), new Date(result.lastSeenDate)) : null,
         });
       } else {
         collection.push(link);

@@ -21,8 +21,7 @@ export const postLink = (link) => {
 export const getLinkStats = (shortcode) => {
   return fetch(`${GET_SHORTEN_ENDPOINT}/${shortcode}/stats`, {
     headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
+      Origin: 'http://evil.com/',
     },
   });
 };

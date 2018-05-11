@@ -13,9 +13,10 @@ const app = express();
 app.use(express.static('dist'));
 
 app.use('/api', proxy({
-  target: 'https://impraise-shorty.herokuapp.com',
+  target: 'http://impraise-shorty.herokuapp.com',
   changeOrigin: true,
   pathRewrite: { '^/api': '' },
+  xfwd: true,
 }));
 
 app.get('*', (req, res) => {
