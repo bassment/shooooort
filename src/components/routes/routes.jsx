@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { HomeContainer } from '../pages/home/homeContainer';
+import { Home } from '../pages/home/home';
 import { NotFound } from '../ui/notFound/notFound';
 
 export const Routes = () => {
@@ -10,7 +10,7 @@ export const Routes = () => {
       <Route
         exact
         path="/"
-        component={HomeContainer}
+        component={Home}
       />
       <Route component={NotFound} />
     </Switch>
