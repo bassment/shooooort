@@ -9,7 +9,7 @@ export const postLink = (link) => {
   };
 
   return fetch(POST_SHORTEN_ENDPOINT, {
-    method: 'post',
+    method: 'POST',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
@@ -19,6 +19,11 @@ export const postLink = (link) => {
 };
 
 export const getLinkStats = (shortcode) => {
-  return fetch(`${GET_SHORTEN_ENDPOINT}/${shortcode}/stats`);
+  return fetch(`${GET_SHORTEN_ENDPOINT}/${shortcode}/stats`, {
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+  });
 };
 

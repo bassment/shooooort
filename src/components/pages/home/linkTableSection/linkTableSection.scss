@@ -62,6 +62,13 @@
   padding-bottom: 0.5rem; 
 }
 
+.highlightedLink {
+  display: inline-block;
+  color: $colorPrimary;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}
+
 .longLink {
   display: block;
   width: 90%;

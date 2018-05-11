@@ -10,6 +10,7 @@ import css from './linkInputSection.scss';
 export const LinkInputSection = (props) => {
   const {
     className,
+    input,
     linkInputSectionUpdateLink,
     linkInputSectionShortenLink,
   } = props;
@@ -23,6 +24,7 @@ export const LinkInputSection = (props) => {
     <div className={wrapperCS}>
       <Input
         className={css.input}
+        defaultValue={input}
         placeholder="Type your link here..."
         onChange={linkInputSectionUpdateLink}
       />
@@ -42,6 +44,7 @@ LinkInputSection.defaultProps = {
 
 LinkInputSection.propTypes = {
   className: PropTypes.string,
+  input: PropTypes.string.isRequired,
   linkInputSectionUpdateLink: PropTypes.func.isRequired,
   linkInputSectionShortenLink: PropTypes.func.isRequired,
 };

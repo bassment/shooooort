@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { get } from 'lodash';
 
 import { linkTableSectionActions } from '../../../../actions/home/linkTableSection';
 import { LinkTableSection } from './linkTableSection';
 
 function mapStateToProps(state) {
-  const message = get(state, 'example.message');
-  return { message };
+  const { links } = state.linkTableSection;
+  const { pendingUpdate } = state.linkTableSection;
+  return { links, pendingUpdate };
 }
 
 function mapDispatchToProps(dispatch) {
