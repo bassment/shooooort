@@ -12,7 +12,11 @@ const app = express();
 
 app.use(express.static('dist'));
 
-app.use('/api', proxy({ target: 'http://manager.souldetect.com', changeOrigin: true }));
+app.use('/api', proxy({
+  target: 'https://impraise-shorty.herokuapp.com',
+  changeOrigin: true,
+  pathRewrite: { '^/api/*': '/' },
+}));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));

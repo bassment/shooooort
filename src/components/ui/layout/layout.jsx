@@ -19,25 +19,28 @@ export const Layout = (props) => {
 
   const wrapperCS = cs(
     { [className]: className },
-    sharedCss.container,
     css.wrapper,
   );
 
   return (
     <div className={wrapperCS} >
-      <Navbar />
       <Progress
         scope={PROGRESS_SITE_SCOPE}
         progressIncrease={5}
         showFastActions
       />
-      <Notifier />
-      <section>
-        {
-          React.Children.map(children, child =>
-            React.cloneElement(child, {}))
-        }
-      </section>
+      <div className={sharedCss.container}>
+        <Navbar />
+        <div className={css.notifierWrapper}>
+          <Notifier />
+        </div>
+        <section>
+          {
+            React.Children.map(children, child =>
+              React.cloneElement(child, {}))
+          }
+        </section>
+      </div>
     </div>
   );
 };

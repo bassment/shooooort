@@ -63,7 +63,7 @@ export class Input extends Component {
   }
 
   render() {
-    const { value } = this.state;
+    const { value, focused } = this.state;
     const {
       className,
       type,
@@ -73,6 +73,7 @@ export class Input extends Component {
     const wrapperCS = cs(
       {
         [className]: className,
+        [css.focused]: focused,
       },
       css.wrapper,
     );

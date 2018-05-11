@@ -8,7 +8,11 @@ import { Button } from '../../../ui/button/button';
 import css from './linkInputSection.scss';
 
 export const LinkInputSection = (props) => {
-  const { className } = props;
+  const {
+    className,
+    linkInputSectionUpdateLink,
+    linkInputSectionShortenLink,
+  } = props;
 
   const wrapperCS = cs(
     { [className]: className },
@@ -20,9 +24,11 @@ export const LinkInputSection = (props) => {
       <Input
         className={css.input}
         placeholder="Type your link here..."
+        onChange={linkInputSectionUpdateLink}
       />
       <Button
         className={css.button}
+        onClick={linkInputSectionShortenLink}
       >
         Shorten this link
       </Button>
@@ -36,4 +42,6 @@ LinkInputSection.defaultProps = {
 
 LinkInputSection.propTypes = {
   className: PropTypes.string,
+  linkInputSectionUpdateLink: PropTypes.func.isRequired,
+  linkInputSectionShortenLink: PropTypes.func.isRequired,
 };
